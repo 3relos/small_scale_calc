@@ -1,4 +1,4 @@
-# small_scale_calc
+# Calculations for the Small-scale dyanmo
 Some basic python functions to calculate basic properties and time evolution of small scale dynamo in the early universe.
 
 The calculations mainly base on the work of:

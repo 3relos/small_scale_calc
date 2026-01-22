@@ -38,7 +38,7 @@ def M_num(u_rms,cs):
     '''
     return u_rms/cs
 
-def f_M(M): # Fedderrath, Chabier, Schober et al. 2011 PRL
+def f_M(M): # Federrath, Chabier, Schober et al. 2011 PRL
     '''
     Function for the ratio of magnetic over turbulent energy at saturation for the solenoidal case.
 

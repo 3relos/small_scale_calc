@@ -63,8 +63,15 @@ def c_s(gamma,T,m):
     return np.sqrt(gamma*k*T/m)
 
 def V_Kepler(n,m,R,H):
-    G = ac.G
-    return np.sqrt(G*n*m*np.pi*R*H)
+    '''
+    Function to get the Kepler rotation velocity for a disk
+    
+    :param n: particle density
+    :param m: particle mass
+    :param R: Radius of the disk
+    :param H: height of the disk
+    '''
+    return np.sqrt(ac.G*n*m*np.pi*R*H)
 
 def V_acc(beta,cs,sphere=True,V_K=0):
     '''
@@ -73,10 +80,7 @@ def V_acc(beta,cs,sphere=True,V_K=0):
     :param beta: fraction of kinetic energy in turbulent motion
     :param cs: Speed of Sound
     :param sphere: Boolean if galaxy is spherical (True) or disk-like (False)
-    :param n: Particle density
-    :param m: Particle mass
-    :param R: Galaxy disk radius
-    :param H: Galaxy disk hight
+    :param V_K: Velocity from Kepler rotation
 
     :return: Value for the velocity
     '''
